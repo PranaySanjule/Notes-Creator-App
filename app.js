@@ -48,10 +48,9 @@ function showNotes() {
     if (notesObj.length != 0) {
         notesElm.innerHTML = html;
     } else {
-        notesElm.innerHTML = `<h4>Nothing to show! Please use "Add a Note" section to add note</h4>`
+        notesElm.innerHTML = `<h4>Nothing to show! Please use "Add a Note" section to add note</h4>`;
     }
 }
-
 
 // Function to delete notes
 function deleteNode(index) {
@@ -107,3 +106,4 @@ search.addEventListener("input", function () {
         }
     })
 })
+
