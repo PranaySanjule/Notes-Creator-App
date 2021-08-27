@@ -6,12 +6,9 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  min-width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+  /* overflow-x:hidden; */
+  overflow-y:auto;
   display: flex;
   flex-direction: column;
 }
@@ -20,12 +17,12 @@ h1, h2, h4{
   font-style: italic;
 }
 
-
-/* background css */
-header{
+.row{
+  height: 100%;
+  width: auto;
   background-color: yellow;
+  padding-bottom: 40px;
 }
-
 
 #txtcnt{
   margin-top: 10px;
@@ -40,28 +37,44 @@ header{
   color: white;
 }
 
-/* footer css */
-.centerdiv{
-  bottom: 0px;
+footer .container-fluid{
+  margin: 0%;
+  height : 80px;
+  width: 100%;
+  bottom: 0  px;
   position: fixed;
   display: flex;
-  background-color: black;
-  color: white;
-  width: 100%;
-  line-height: 60px;
-  justify-content: left;
+  line-height: 10px;
   align-items: center;
-  padding-left: 30px;
-  padding-top: 0  px;
+  justify-content: right;
 }
 
-footer a{
+
+.centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.centerdiv a{
+  padding-top: 9px;
+  padding-left: 11px;
   margin: 10px;
   height: 50px;
   width: 50px;
   background-color: white;
   border-radius: 50px;
+  align-items: center;
+}
+
+.centerdiv p{
+  margin-left: 30%;
+  margin-right: 25%;
+  padding-bottom: 0;
   text-align: center;
+  justify-content: center;
+  color: white;
 }
 
 a i{
@@ -85,22 +98,24 @@ footer a:hover i{
   color:#0097e6;
 }
 
-footer span{
-  font-size: 18px;
-  margin-left: 25%;
+
+footer p{
+  padding-bottom: 20px;
+  margin: 0px;
 }
+
 
 /* page up button css */
 #myBtn {
   position: fixed;
   height: 35px;
-  bottom: 8px;
+  bottom: 10px;
   float: right;
-  right: 10%;
-  left: 90%;
+  right: 88%;
+  left: 5%;
   max-width: 35px;
-  width: 80%;
-  font-size: 20px;
+  width: 100%;
+  font-size: 25px;
   border-color: white;
   background-color: black;
   padding: 2px;
